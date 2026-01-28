@@ -16,7 +16,7 @@
            http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
 
-    <context:component-scan base-package="pl.microblog" />
+    <context:component-scan base-package="ATINS.SystemStudencki" />
     <context:annotation-config />
 
 
@@ -39,7 +39,7 @@
         <property name="dataSource" ref="dataSource" />
 
 
-        <property name="packagesToScan" value="pl.microblog.model" />
+        <property name="packagesToScan" value="ATINS.SystemStudencki" />
 
         <property name="jpaVendorAdapter">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
