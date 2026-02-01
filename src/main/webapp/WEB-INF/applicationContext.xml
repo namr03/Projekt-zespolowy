@@ -67,4 +67,44 @@
                   ref="entityManagerFactoryBean" />
     </bean>
 
+    <!-- DAO Beans -->
+    <bean
+		id="StudentDao"
+		class="ATINS.SystemStudencki.dao.impl.StudentDaoImpl"
+	/>
+    <bean
+		id="PrzedmiotDao"
+		class="ATINS.SystemStudencki.dao.impl.PrzedmiotDaoImpl"
+	/>
+    <bean id="ZapisDao" class="ATINS.SystemStudencki.dao.impl.ZapisDaoImpl" />
+    <bean id="OcenaDao" class="ATINS.SystemStudencki.dao.impl.OcenaDaoImpl" />
+    <bean
+		id="PlatnoscDao"
+		class="ATINS.SystemStudencki.dao.impl.PlatnoscDaoImpl"
+	/>
+    <bean
+		id="KsiazkaDao"
+		class="ATINS.SystemStudencki.dao.impl.KsiazkaDaoImpl"
+	/>
+    <bean
+		id="WypozyczenieDao"
+		class="ATINS.SystemStudencki.dao.impl.WypozyczenieDaoImpl"
+	/>
+    <bean
+		id="SylabusDao"
+		class="ATINS.SystemStudencki.dao.impl.SylabusDaoImpl"
+	/>
+    <bean
+		id="PlanZajecDao"
+		class="ATINS.SystemStudencki.dao.impl.PlanZajecDaoImpl"
+	/>
+    <bean
+		id="WykladowcaDao"
+		class="ATINS.SystemStudencki.dao.impl.WykladowcaDaoImpl"
+	/>
+    <bean
+		id="PowiadomienieDao"
+		class="ATINS.SystemStudencki.dao.impl.PowiadomienieDaoImpl"
+	/>
+
 </beans>
