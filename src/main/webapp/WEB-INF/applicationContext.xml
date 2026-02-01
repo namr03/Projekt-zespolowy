@@ -39,7 +39,7 @@
         <property name="dataSource" ref="dataSource" />
 
 
-        <property name="packagesToScan" value="ATINS.SystemStudencki" />
+        <property name="packagesToScan" value="ATINS.SystemStudencki.model" />
 
         <property name="jpaVendorAdapter">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
