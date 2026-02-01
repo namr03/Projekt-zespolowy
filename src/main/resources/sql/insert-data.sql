@@ -52,7 +52,7 @@ VALUES
 (3, 3.5, 'CZĄSTKOWA', 'Kolokwium 2', '2026-02-03'),
 (3, 4.0, 'KOŃCOWA', 'Ocena końcowa', '2026-02-10'),
 (4, 3.0, 'CZĄSTKOWA', 'Kolokwium 1', '2025-11-30'),
-(4, 3.5, 'CZĄSTKOWA', 'Kolokwium 2', '2026-01-010'),
+(4, 3.5, 'CZĄSTKOWA', 'Kolokwium 2', '2026-01-01'),
 (4, 4.0, 'KOŃCOWA', 'Ocena końcowa', '2026-02-10'),
 (5, 3.0, 'CZĄSTKOWA', 'Kolokwium 1', '2025-12-20'),
 (5, 4.5, 'CZĄSTKOWA', 'Kolokwium 2', '2026-01-20'),
@@ -80,23 +80,23 @@ VALUES
 ('Poradnik typera', 'Zbigniew Kartka', '240-020-200', 200, FALSE);
 
 INSERT INTO wypozyczenie (id_student, id_ksiazka, data_wypozyczenia, termin_zwrotu, data_oddania, status)
-VALUES (1, 2, '2025-12-20', '2026-12-20', '', 'WYPOZYCZONA'),
-VALUES (2, 2, '2025-10-20', '2026-03-20', '', 'WYPOZYCZONA'),
-VALUES (2, 1, '2025-11-20', '2026-11-20', '2025-11-22', 'ZWRÓCONA'),
-VALUES (3, 6, '2026-01-04', '2026-04-04', '2026-02-02', 'ZWRÓCONA'),
-VALUES (3, 5, '2026-01-20', '2026-05-20', '', 'WYPOZYCZONA');
+VALUES (1, 2, '2025-12-20', '2026-12-20', NULL, 'WYPOZYCZONA'),
+(2, 2, '2025-10-20', '2026-03-20', NULL, 'WYPOZYCZONA'),
+(2, 1, '2025-11-20', '2026-11-20', '2025-11-22', 'ZWRÓCONA'),
+(3, 6, '2026-01-04', '2026-04-04', '2026-02-02', 'ZWRÓCONA'),
+(3, 5, '2026-01-20', '2026-05-20', NULL, 'WYPOZYCZONA');
 
 INSERT INTO platnosc (id_student, tytul, kwota, opis, data_wplaty, status)
 VALUES (1, 'Czesne', 5000.00, 'Wpłata za semestr zimowy', '2024-09-25', 'ZAKSIEGOWANA'),
-VALUES (1, 'Czesne', 5300.00, 'Wpłata za semestr zimowy', '2025-10-02', 'ZAKSIEGOWANA'),
-VALUES (2, 'Czesne', 5000.00, 'Wpłata za semestr letni', '2025-03-01', 'ZAKSIEGOWANA'),
-VALUES (3, 'Czesne', 5700.00, 'Wpłata za semestr zimowy', '2025-09-29', 'ZAKSIEGOWANA'),
-VALUES (3, 'Czesne', 4999.00, 'Wpłata za semestr letni', '2026-02-28', 'ZAKSIEGOWANA');
+(1, 'Czesne', 5300.00, 'Wpłata za semestr zimowy', '2025-10-02', 'ZAKSIEGOWANA'),
+(2, 'Czesne', 5000.00, 'Wpłata za semestr letni', '2025-03-01', 'ZAKSIEGOWANA'),
+(3, 'Czesne', 5700.00, 'Wpłata za semestr zimowy', '2025-09-29', 'ZAKSIEGOWANA'),
+(3, 'Czesne', 4999.00, 'Wpłata za semestr letni', '2026-02-28', 'ZAKSIEGOWANA');
 
 INSERT INTO powiadomienie (id_student, tytul, tresc, data_wyslania)
-VALUES (1, 'Zalegasz z płatnościami', 'Przypominamy o zapłaceniu za semestr', '2025-10-01');
-VALUES (1, 'Pomyłka', 'Jednak nie zalegasz z płatnościami', '2025-10-20');
-VALUES (2, 'Udanej sesji', 'Do zobaczenia w kolejnym semestrze', '2026-02-10');
-VALUES (2, 'Pospiesz się z płatnością', 'Uczelnia potrzebuje pieniędzy na prąd i ogrzewanie', '2025-10-01');
-VALUES (3, 'Wymierz przedmioty', 'Zapisz się na przedmioty w ramach kolejnego semestru', '2025-09-20');
-VALUES (3, 'Zalegasz z płatnościami', 'Zapłać za kolejny semestr', '2026-02-28');
+VALUES(1, 'Zalegasz z płatnościami', 'Przypominamy o zapłaceniu za semestr', '2025-10-01'),
+(1, 'Pomyłka', 'Jednak nie zalegasz z płatnościami', '2025-10-20'),
+(2, 'Udanej sesji', 'Do zobaczenia w kolejnym semestrze', '2026-02-10'),
+(2, 'Pospiesz się z płatnością', 'Uczelnia potrzebuje pieniędzy na prąd i ogrzewanie', '2025-10-01'),
+(3, 'Wymierz przedmioty', 'Zapisz się na przedmioty w ramach kolejnego semestru', '2025-09-20'),
+(3, 'Zalegasz z płatnościami', 'Zapłać za kolejny semestr', '2026-02-28');
